@@ -11,7 +11,9 @@
       "category": "Oils",
       "description": "Cold-pressed from local olives. Rich, fruity and full of flavor. 500 ml bottle.",
       "price": 45,
-      "images": ["./images/coffee.PNG"]
+      "images": [
+        "./images/coffee.PNG"
+      ]
     },
     {
       "id": "sample-wild-honey",
@@ -19,7 +21,9 @@
       "category": "Honey",
       "description": "Raw, unfiltered honey collected from mountain wildflowers. 350 g jar.",
       "price": 38,
-      "images": ["coffee.PNG"]
+      "images": [
+        "images/wild-flower-honey-mw9m393m-0.jpg"
+      ]
     },
     {
       "id": "sample-thyme",
@@ -27,7 +31,10 @@
       "category": "Herbs",
       "description": "Hand-picked and sun-dried thyme leaves. Perfect for teas and cooking. 100 g bag.",
       "price": 15,
-      "images": ["coffee.PNG","coffee.PNG"]
+      "images": [
+        "coffee.PNG",
+        "coffee.PNG"
+      ]
     },
     {
       "id": "sample-soap",
@@ -35,7 +42,9 @@
       "category": "Body care",
       "description": "Traditional natural soap bar made with olive and laurel oil. Gentle on the skin.",
       "price": 12,
-      "images": ["coffee.PNG"]
+      "images": [
+        "coffee.PNG"
+      ]
     }
   ]
 }
