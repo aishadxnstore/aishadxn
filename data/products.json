@@ -11,7 +11,7 @@
       "category": "Oils",
       "description": "Cold-pressed from local olives. Rich, fruity and full of flavor. 500 ml bottle.",
       "price": 45,
-      "images": ["coffee.PNG"]
+      "images": ["./images/coffee.PNG"]
     },
     {
       "id": "sample-wild-honey",
