@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "shopName": "Green Roots",
+    "tagline": "Natural products, straight from nature",
+    "currency": "₪"
+  },
+  "products": [
+    {
+      "id": "sample-olive-oil",
+      "name": "Extra Virgin Olive Oil",
+      "category": "Oils",
+      "description": "Cold-pressed from local olives. Rich, fruity and full of flavor. 500 ml bottle.",
+      "price": 45,
+      "images": ["coffee.PNG"]
+    },
+    {
+      "id": "sample-wild-honey",
+      "name": "Wild Flower Honey",
+      "category": "Honey",
+      "description": "Raw, unfiltered honey collected from mountain wildflowers. 350 g jar.",
+      "price": 38,
+      "images": ["coffee.PNG"]
+    },
+    {
+      "id": "sample-thyme",
+      "name": "Dried Wild Thyme (Za'atar)",
+      "category": "Herbs",
+      "description": "Hand-picked and sun-dried thyme leaves. Perfect for teas and cooking. 100 g bag.",
+      "price": 15,
+      "images": ["coffee.PNG","coffee.PNG"]
+    },
+    {
+      "id": "sample-soap",
+      "name": "Olive Oil Soap",
+      "category": "Body care",
+      "description": "Traditional natural soap bar made with olive and laurel oil. Gentle on the skin.",
+      "price": 12,
+      "images": ["coffee.PNG"]
+    }
+  ]
+}
