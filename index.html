@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Shop</title>
+  <meta name="description" content="Natural products catalog">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <h1 id="shopName">Nature Shop</h1>
+    <p id="tagline"></p>
+  </header>
+
+  <main class="container">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search products...">
+      <select id="category"><option value="">All categories</option></select>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty hidden">No products found.</div>
+  </main>
+
+  <footer class="site">© <span id="year"></span> <span id="footName"></span></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

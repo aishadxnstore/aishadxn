@@ -1,0 +1,62 @@
+:root{
+  --green:#2f6b3f; --green-dark:#1f4a2b; --leaf:#7fb069; --cream:#f7f3e9; --sand:#e9e1cc;
+  --text:#2b2b26; --muted:#6b6b5f; --card:#ffffff; --danger:#b3392f; --radius:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--text);line-height:1.5}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+header.site{background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff;padding:48px 20px 40px;text-align:center}
+header.site h1{margin:0 0 6px;font-size:clamp(1.8rem,5vw,2.8rem);letter-spacing:.5px}
+header.site p{margin:0;opacity:.9}
+.container{max-width:1150px;margin:0 auto;padding:24px 16px}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.toolbar input,.toolbar select{padding:11px 14px;border:1px solid var(--sand);border-radius:10px;font-size:1rem;background:#fff}
+.toolbar input{flex:1;min-width:200px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);display:flex;flex-direction:column;transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.card .main{aspect-ratio:4/3;background:linear-gradient(135deg,#dfeed4,#b9d8a6);display:flex;align-items:center;justify-content:center;font-size:3.5rem;overflow:hidden}
+.card .main img{width:100%;height:100%;object-fit:cover}
+.thumbs{display:flex;gap:6px;padding:8px 12px 0}
+.thumbs img{width:44px;height:44px;object-fit:cover;border-radius:8px;border:2px solid transparent;cursor:pointer;opacity:.75}
+.thumbs img.active{border-color:var(--green);opacity:1}
+.card .body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .cat{font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--leaf);font-weight:700}
+.card h3{margin:0;font-size:1.15rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem;flex:1}
+.price{font-weight:800;font-size:1.25rem;color:var(--green-dark);margin-top:6px}
+.empty{text-align:center;color:var(--muted);padding:60px 10px}
+footer.site{text-align:center;color:var(--muted);padding:30px 16px;font-size:.9rem}
+
+/* admin */
+.panel{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:24px}
+.panel h2{margin-top:0}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:.92rem}
+input[type=text],input[type=password],input[type=number],textarea,select{width:100%;padding:10px 12px;border:1px solid #d9d2bc;border-radius:10px;font:inherit;background:#fff}
+textarea{min-height:90px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+button,.btn{background:var(--green);color:#fff;border:0;padding:10px 18px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer}
+button:hover{background:var(--green-dark)}
+button.secondary{background:#e5decb;color:var(--text)}
+button.danger{background:var(--danger)}
+button:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.preview{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.preview .pv{position:relative}
+.preview img{width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid #ddd}
+.preview .x{position:absolute;top:-6px;right:-6px;width:22px;height:22px;padding:0;border-radius:50%;background:var(--danger);font-size:.8rem;line-height:22px}
+.msg{padding:10px 14px;border-radius:10px;margin:12px 0;display:none}
+.msg.ok{display:block;background:#e3f3df;color:#1f5a2a}
+.msg.err{display:block;background:#fbe4e1;color:#8a2a21}
+.msg.info{display:block;background:#eef2f7;color:#2b4a6b}
+.list-item{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid #eee}
+.list-item:last-child{border-bottom:0}
+.list-item .th{width:60px;height:60px;border-radius:10px;background:#dfeed4;display:flex;align-items:center;justify-content:center;font-size:1.6rem;overflow:hidden;flex-shrink:0}
+.list-item .th img{width:100%;height:100%;object-fit:cover}
+.list-item .info{flex:1;min-width:0}
+.list-item .info b{display:block}
+.list-item .info span{color:var(--muted);font-size:.9rem}
+.small{font-size:.85rem;color:var(--muted)}
+.hidden{display:none}
