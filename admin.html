@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <h1>Admin Dashboard</h1>
+    <p><a href="index.html" style="color:#fff">← View website</a></p>
+  </header>
+
+  <main class="container">
+
+    <!-- LOGIN -->
+    <section id="loginView" class="panel">
+      <h2>Sign in</h2>
+      <p class="small">Connect to your GitHub repository. Your token stays in this browser only and is sent only to api.github.com.</p>
+      <div class="row">
+        <div><label>GitHub username</label><input id="owner" type="text" placeholder="your-username"></div>
+        <div><label>Repository name</label><input id="repo" type="text" placeholder="nature-shop"></div>
+      </div>
+      <div class="row">
+        <div><label>Branch</label><input id="branch" type="text" value="main"></div>
+        <div><label>Access token</label><input id="token" type="password" placeholder="github_pat_..."></div>
+      </div>
+      <label style="font-weight:400"><input id="remember" type="checkbox" checked style="width:auto"> Remember me on this device</label>
+      <div class="actions"><button id="loginBtn">Sign in</button></div>
+      <div id="loginMsg" class="msg"></div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <div id="dashView" class="hidden">
+      <div class="actions" style="margin:0 0 18px">
+        <button id="newBtn">+ Add product</button>
+        <button id="settingsBtn" class="secondary">Shop settings</button>
+        <button id="logoutBtn" class="secondary">Sign out</button>
+      </div>
+      <div id="globalMsg" class="msg"></div>
+
+      <section id="settingsPanel" class="panel hidden">
+        <h2>Shop settings</h2>
+        <div class="row">
+          <div><label>Shop name</label><input id="sName" type="text"></div>
+          <div><label>Currency symbol</label><input id="sCurrency" type="text" placeholder="₪ or $ or €"></div>
+        </div>
+        <label>Tagline</label><input id="sTagline" type="text">
+        <div class="actions"><button id="saveSettings">Save settings</button><button class="secondary" id="closeSettings">Cancel</button></div>
+      </section>
+
+      <section id="formPanel" class="panel hidden">
+        <h2 id="formTitle">Add product</h2>
+        <input type="hidden" id="pId">
+        <div class="row">
+          <div><label>Name *</label><input id="pName" type="text" maxlength="80"></div>
+          <div><label>Price *</label><input id="pPrice" type="number" min="0" step="0.01"></div>
+        </div>
+        <label>Category</label>
+        <input id="pCategory" type="text" list="cats" placeholder="e.g. Honey, Herbs, Oils">
+        <datalist id="cats"></datalist>
+        <label>Description</label>
+        <textarea id="pDesc" maxlength="400"></textarea>
+        <label>Images (you can add several)</label>
+        <input id="pFiles" type="file" accept="image/*" multiple>
+        <div id="pPreview" class="preview"></div>
+        <div class="actions">
+          <button id="saveProduct">Save product</button>
+          <button id="cancelProduct" class="secondary">Cancel</button>
+        </div>
+        <div id="formMsg" class="msg"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Products (<span id="count">0</span>)</h2>
+        <div id="list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
